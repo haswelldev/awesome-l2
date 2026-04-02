@@ -2,6 +2,8 @@
 
 > A curated list of tools and utilities for Lineage II players and communities.
 
+**Website:** https://haswelldev.github.io/awesome-l2/
+
 ---
 
 ## Contents
