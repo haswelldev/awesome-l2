@@ -1,0 +1,76 @@
+/* ── Design tokens ────────────────────────────────────────── */
+:root {
+  /* Palette */
+  --color-bg:          #0d0d1a;
+  --color-surface:     #12121f;
+  --color-surface-2:   #1a1a30;
+  --color-border:      #2a2a4a;
+  --color-border-glow: #4a3f7a;
+
+  --color-text:        #c8c8e8;
+  --color-text-muted:  #7070a0;
+  --color-text-heading:#e8e0ff;
+
+  --color-accent:      #7c5cbf;
+  --color-accent-glow: #a07de0;
+  --color-gold:        #c8a43c;
+
+  /* Tag type colors */
+  --tag-desktop: #1e4060;
+  --tag-webapp:  #1e4a2e;
+  --tag-bot:     #4a2e1e;
+
+  /* Button variants */
+  --btn-repo-bg:     #1e1e3a;
+  --btn-repo-hover:  #2a2a55;
+  --btn-webapp-bg:   #1a3328;
+  --btn-webapp-hover:#22443a;
+  --btn-dl-bg:       #3a2a10;
+  --btn-dl-hover:    #4a3618;
+
+  /* Typography */
+  --font-body: 'Georgia', 'Times New Roman', serif;
+  --font-ui:   system-ui, -apple-system, sans-serif;
+
+  /* Spacing */
+  --radius-card:  8px;
+  --radius-badge: 4px;
+  --shadow-card:  0 2px 16px rgba(0, 0, 0, 0.6);
+  --glow-accent:  0 0 12px rgba(124, 92, 191, 0.3);
+}
+
+/* ── Reset ────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-ui);
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+a {
+  color: var(--color-accent-glow);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-gold);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
